@@ -8,7 +8,13 @@ void main() {
   obj.insert(30);
   obj.insert(20);
   obj.insert(50);
-  obj.insert(3);
+  // obj.insert(3);
+  obj.inorderTraversal(obj.root);
+  void delete(int data) {
+    obj.delete(obj.root, data);
+  }
+
+  delete(20);
   obj.inorderTraversal(obj.root);
 
   // var root = TreeNode<int>(1);
